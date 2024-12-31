@@ -1,8 +1,11 @@
 import styles from './Button.module.css'
 
-function Button({name}) {
+function Button({img, text}) {
   return (
-    <a className={styles.button} href='/' >{name}</a>
+    <button className={styles.button}>
+      <img src={img} alt={text} />
+      <p>{text}</p>
+    </button>
   )
 }
 

@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #191919;
+  gap: 93px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 42px;
+}
+
+.category {
+  width: 432px;
+  height: 70px;
+  border-radius: 15px;
+  color: white;
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: center;
+  align-content: center;
+}
+
+.videos {
+  display: flex;
+  gap: 30px;
+}

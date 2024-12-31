@@ -1,4 +1,4 @@
-import Button from '../Button';
+import Link from '../Link';
 import styles from './Cabecalho.module.css';
 
 function Cabecalho() {
@@ -6,8 +6,8 @@ function Cabecalho() {
     <div className={styles.cabecalho}>
       <img className={styles.logo} src='./images/logo.svg' alt='Logo Aluraflix' />
       <div className={styles.buttons}>
-        <Button name='Home' />
-        <Button name='Novo Vídeo' />
+        <Link name='Home' />
+        <Link name='Novo Vídeo' />
       </div>
     </div>
   )

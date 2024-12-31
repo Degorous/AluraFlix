@@ -1,0 +1,20 @@
+.container {
+  width: 432px;
+  height: 319px;
+  border: 5px solid #6BD1FF;
+  border-radius: 5px;
+}
+
+.video {
+  width: 432px;
+  height: 260px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: black;
+  height: 60px;
+  width: 432px;
+}

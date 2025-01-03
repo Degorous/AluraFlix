@@ -1,5 +1,4 @@
 import Form from '../../componentes/Form'
-import FormButton from '../../componentes/FormButton'
 import styles from './NovoVideo.module.css'
 
 function NovoVideo() {
@@ -12,10 +11,6 @@ function NovoVideo() {
       <div className={styles.form}>
         <h2>Criar Card</h2>
         <Form />
-        <div className={styles.formButton}>
-          <FormButton name="GUARDAR" />
-          <FormButton name="LIMPAR" />
-        </div>
       </div>
     </div>
   )

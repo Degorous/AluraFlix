@@ -1,20 +1,21 @@
-.field {
+.area {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
 }
 
-.field label {
+.area label {
   font-size: 20px;
 }
 
-.field input {
-  height: 60px;
+.area textarea {
+  height: 220px;
   font-size: 20px;
   background-color: #191919;
   border: 1px solid #262626;
   border-radius: 5px;
   color: white;
   padding: 15px;
+  resize: vertical;
 }

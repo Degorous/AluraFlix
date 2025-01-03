@@ -27,6 +27,7 @@
   width: 80%;
   flex-direction: column;
   margin-bottom: 71px;
+  gap: 70px;
 }
 
 .form h2 {
@@ -38,9 +39,4 @@
   align-content: center;
   border-top: solid 1px #262626;
   border-bottom: solid 1px #262626;
-}
-
-.formButton {
-  display: flex;
-  gap: 20px;
 }

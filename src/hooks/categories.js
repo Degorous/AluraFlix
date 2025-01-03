@@ -1,9 +1,4 @@
-// import { createContext } from "react";
-
 import { useEffect, useState } from "react";
-
-// export const CategoriesContext = createContext();
-// CategoriesContext.displayName = "Categories";
 
 const url = 'http://localhost:5050/categories';
 

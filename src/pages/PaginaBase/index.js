@@ -1,13 +1,13 @@
 import { Outlet } from "react-router"
-import Cabecalho from "../../componentes/Cabecalho"
-import Rodape from "../../componentes/Rodape"
+import Header from "../../componentes/Header"
+import Footer from "../../componentes/Footer"
 
 function PaginaBase() {
   return (
     <main>
-      <Cabecalho />
+      <Header />
       <Outlet />
-      <Rodape />
+      <Footer />
     </main>
   )
 }

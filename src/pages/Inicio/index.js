@@ -1,28 +1,15 @@
 import Banner from "../../componentes/Banner"
 import Category from "../../componentes/Category"
+import { useCategories } from "../../hooks/categories"
 
-const categories = {
-  "categories": [
-    {
-      "id": 1,
-      "name": "League of Legends",
-      "background": "#BE9709"
-    },
-    {
-      "id": 2,
-      "name": "Dota 2",
-      "background": "#AB2004"
-    }
-  ]
-}
 
 const video = {
-    "videos": [
+  "videos": [
     {
-      "id": 1,
+      "id": '1',
       "url": "https://www.youtube.com/embed/DNez-aVRits",
       "title": "LL STYLISH | GET PRIO OR DIE TRYING!",
-      "category_id": 1
+      "category_id": '1'
     },
     {
       "id": 2,
@@ -40,10 +27,12 @@ const video = {
 }
 
 function Inicio() {
+  const { categories } = useCategories();
+
   return (
     <>
       <Banner />
-      <Category videos={video.videos} categories={categories.categories} background={categories.background} />
+      <Category videos={video.videos} categories={categories} />
     </>
   )
 }

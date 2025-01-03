@@ -1,8 +1,8 @@
 import styles from './Link.module.css'
 
-function Link({name}) {
+function Link({ name, href }) {
   return (
-    <a className={styles.button} href='/' >{name}</a>
+    <a className={styles.button} href={href} >{name}</a>
   )
 }
 

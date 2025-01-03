@@ -3,6 +3,8 @@
   gap: 50px;
   padding: 101px 41px;
   background-image: url('../../../public/images/player.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 700px;
   align-items: flex-end;
   box-sizing: border-box;

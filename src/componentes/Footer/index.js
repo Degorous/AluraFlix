@@ -1,12 +1,12 @@
-import styles from './Rodape.module.css'
+import styles from './Footer.module.css'
 
-function Rodape() {
+function Footer() {
   return (
-    <div className={styles.rodape}>
+    <div className={styles.footer}>
       <img className={styles.logo} src='./images/logo.svg' alt='Logo Aluraflix' />
       <p>Desenvolvido por Erick</p>
     </div>
   )
 }
 
-export default Rodape
+export default Footer

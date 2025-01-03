@@ -1,75 +1,75 @@
 {
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "League of Legends",
       "background": "#BE9709"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Dota 2",
       "background": "#AB2004"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Path of Exile",
       "background": "#F45E13"
     }
   ],
   "videos": [
     {
-      "id": 1,
+      "id": "1",
       "url": "https://www.youtube.com/embed/DNez-aVRits",
       "title": "LL STYLISH | GET PRIO OR DIE TRYING!",
-      "category_id": 1
+      "category_id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "url": "https://www.youtube.com/embed/fLGij9KQN6E",
       "title": "LL STYLISH | BEST OF NOVEMBER 2024",
-      "category_id": 1
+      "category_id": "1"
     },
     {
-      "id": 3,
+      "id": "3",
       "url": "https://www.youtube.com/embed/Jf4ekNJzwHs",
       "title": "LL STYLISH | LET'S GET BACK TO THE GRIND LET'S GO!",
-      "category_id": 1
+      "category_id": "1"
     },
     {
-      "id": 4,
+      "id": "4",
       "url": "https://www.youtube.com/embed/_pvqMXBU30w",
       "title": "They Never Saw It Coming",
-      "category_id": 2
+      "category_id": "2"
     },
     {
-      "id": 5,
+      "id": "5",
       "url": "https://www.youtube.com/embed/agEYPZrHM34",
       "title": "Meat Hook + Mines = EXPLOSIONS!",
-      "category_id": 2
+      "category_id": "2"
     },
     {
-      "id": 6,
+      "id": "6",
       "url": "https://www.youtube.com/embed/H_WobDRq50c",
       "title": "It's Over the Moment You're Hooked",
-      "category_id": 2
+      "category_id": "2"
     },
     {
-      "id": 7,
+      "id": "7",
       "url": "https://www.youtube.com/embed/74tLM6ez_qI",
       "title": "Going all in on Rarity & a costly mistake",
-      "category_id": 3
+      "category_id": "3"
     },
     {
-      "id": 8,
+      "id": "8",
       "url": "https://www.youtube.com/embed/zof-qQmJDjk",
       "title": "How to pricecheck & sell your items in Path of Exile 2",
-      "category_id": 3
+      "category_id": "3"
     },
     {
-      "id": 9,
+      "id": "9",
       "url": "https://www.youtube.com/embed/9hRpNyy3Fhw",
       "title": "Can you get rich in Trial of the Sekhemas?",
-      "category_id": 3
+      "category_id": "3"
     }
   ]
 }

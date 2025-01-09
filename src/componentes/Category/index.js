@@ -1,7 +1,7 @@
 import Video from '../Video'
 import styles from './Category.module.css'
 
-function Category({ videos, categories }) {
+function Category({ videos, categories, onDelete }) {
 
   return (
     <div className={styles.container}>
@@ -19,6 +19,8 @@ function Category({ videos, categories }) {
                 key={video.id}
                 url={video.url}
                 title={video.title}
+                id={video.id}
+                onDelete={onDelete}
               />
             })
             }

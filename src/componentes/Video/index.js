@@ -1,7 +1,8 @@
 import styles from './Video.module.css'
 import Button from '../Button'
 
-function Video({ url, title }) {
+function Video({ url, title, id, onDelete }) {
+
   return (
     <div className={styles.container}>
       <div className={styles.video}>
@@ -15,7 +16,7 @@ function Video({ url, title }) {
           allowFullScreen></iframe>
       </div>
       <div className={styles.buttons}>
-        <Button text='DELETAR' img='./images/delete.png' />
+        <Button text='DELETAR' img='./images/delete.png' onClick={(event) => onDelete(event, id)} />
         <Button text='EDITAR' img='./images/edit.png' />
       </div>
     </div>

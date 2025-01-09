@@ -11,14 +11,14 @@ export async function videosList() {
 export function useVideos() {
   const [videos, setVideos] = useState([]);
 
-  useEffect(() => {
-    async function fetchVideos() {
-      const data = await videosList();
-      setVideos(data);
-    }
+  async function fetchVideos() {
+    const data = await videosList();
+    setVideos(data);
+  }
 
+  useEffect(() => {
     fetchVideos();
   }, []);
 
-  return { videos };
+  return { videos, reload: fetchVideos };
 }

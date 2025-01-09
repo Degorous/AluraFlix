@@ -1,13 +1,13 @@
 import { useCategories } from '../../hooks/categories'
 import styles from './FormList.module.css'
 
-function FormList({ label, placeholder }) {
+function FormList({ label, placeholder, value, onChange }) {
   const { categories } = useCategories();
 
   return (
     <div className={styles.formList}>
       <label>{label}</label>
-      <select defaultValue="">
+      <select defaultValue="" required onChange={onChange}>
         <option value="" disabled hidden>{placeholder}</option>
         {categories.map((category) => {
           return <option key={category.id} value={category.id}>{category.name}</option>

@@ -1,8 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 93px;
+  gap: 90px;
   width: 100%;
+  margin-top: 30px;
 }
 
 .main {
@@ -24,5 +25,6 @@
 
 .videos {
   display: flex;
-  gap: 30px;
+  gap: 15px;
+  flex-wrap: wrap;
 }

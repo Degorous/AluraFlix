@@ -5,14 +5,15 @@ import TextField from '../TextField'
 import styles from './Form.module.css'
 import { createVideo } from '../../API/api'
 import { useNavigate } from 'react-router'
+import { editVideo } from '../../hooks/editVideo'
 
-function Form() {
+function Form({ video }) {
 
   const [formData, setFormData] = useState(
     {
-      title: '',
-      category: '',
-      url: ''
+      title: video ? video.title : '',
+      category: video ? video.category_id : '',
+      url: video ? video.url : ''
     }
   )
 
@@ -20,7 +21,11 @@ function Form() {
 
   async function onSubmit(event) {
     event.preventDefault()
-    await createVideo(formData.url, formData.title, formData.category)
+
+    video ?
+      await editVideo({ id: video.id, url: formData.url, title: formData.title })
+      : await createVideo(formData.url, formData.title, formData.category)
+
     navigate('/')
   }
 
@@ -35,12 +40,12 @@ function Form() {
               value={formData.title}
               onChange={(event) => setFormData({ ...formData, title: event.target.value })}
             />
-            <FormList
+            {!video && (<FormList
               label="Categoria"
               placeholder="Escolha uma categoria"
               value={formData.category}
               onChange={(event) => setFormData({ ...formData, category: event.target.value })}
-            />
+            />)}
           </div>
           <div className={styles.fields} >
             <TextField
@@ -53,7 +58,6 @@ function Form() {
         </div>
         <div className={styles.formButton}>
           <FormButton name="GUARDAR" />
-          <FormButton name="LIMPAR" />
         </div>
       </form>
     </section>

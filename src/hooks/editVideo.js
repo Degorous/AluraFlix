@@ -40,5 +40,3 @@ export async function editVideo({ id, url, title }) {
 
   return data;
 }
-
-return { editVideo }

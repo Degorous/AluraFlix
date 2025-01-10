@@ -1,7 +1,7 @@
 import styles from './Video.module.css'
 import Button from '../Button'
 
-function Video({ url, title, id, onDelete }) {
+function Video({ url, title, id, onDelete, onEdit }) {
 
   return (
     <div className={styles.container}>
@@ -17,7 +17,7 @@ function Video({ url, title, id, onDelete }) {
       </div>
       <div className={styles.buttons}>
         <Button text='DELETAR' img='./images/delete.png' onClick={(event) => onDelete(event, id)} />
-        <Button text='EDITAR' img='./images/edit.png' />
+        <Button text='EDITAR' img='./images/edit.png' onClick={(event) => onEdit(event, id)} />
       </div>
     </div>
   )

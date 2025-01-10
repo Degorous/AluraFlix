@@ -1,7 +1,7 @@
 import { useCategories } from '../../hooks/categories'
 import styles from './FormList.module.css'
 
-function FormList({ label, placeholder, value, onChange }) {
+function FormList({ label, placeholder, onChange }) {
   const { categories } = useCategories();
 
   return (

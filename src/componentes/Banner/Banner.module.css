@@ -2,8 +2,9 @@
   display: flex;
   gap: 50px;
   padding: 101px 41px;
-  background-image: url('../../../public/images/player.png');
+  background-image: url('../../../public/images/noxus.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 700px;
   align-items: flex-end;
@@ -22,12 +23,23 @@
 }
 
 .text {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   align-content: flex-end;
   width: 50%;
   height: 305px;
   color: white;
+  gap: 30px;
   z-index: 1;
+}
+
+.text h1 {
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.text p {
+  font-size: 20px;
 }
 
 .image {
